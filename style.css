@@ -17,14 +17,41 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  width: 65%;
+  width: 500px;
   height: 500px;
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gameSelectorContainerItems {
-  margin: 10%;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
   background-color: #c2d9ff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gameIcons {
+  height: 68px;
+  width: 68px;
+  margin-left: 66px;
+  margin-top: 10px;
+}
+
+.gameTitles {
+  text-align: center;
+}
+
+#headerTitle {
+  margin-top: 0;
+  padding: 60px;
+  text-align: center;
+  font-size: 60px;
+  color: #c2d9ff;
+}
+
+.gameSelectorContainerItems:hover {
+  background-color: #8e8ffa;
 }
