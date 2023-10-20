@@ -1,0 +1,30 @@
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  background-color: #8e8ffa;
+}
+
+#header {
+  background-color: #190482;
+  height: 250px;
+}
+
+#gameSelectorContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #7752fe;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 65%;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gameSelectorContainerItems {
+  margin: 10%;
+  background-color: #c2d9ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
