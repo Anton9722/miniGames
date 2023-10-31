@@ -35,3 +35,23 @@ body {
 .sequenceButtons:hover {
   background-color: #8e8ffa;
 }
+
+#sequenceStartBtnDiv {
+  background-color: #190482;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.btn {
+  background-color: #7752fe;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+}

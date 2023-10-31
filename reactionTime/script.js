@@ -20,6 +20,7 @@ function runFor10Seconds() {
     //Create random number between 10000 - 1000, we use this to get random amout of miliseconds
     let randomTime = Math.floor(Math.random() * 10000) + 1000;
     console.log(randomTime);
+    
     setTimeout(function () {
       reactTimeDiv.style.backgroundColor = "red";
       textInReactionTime.innerHTML = "Now!!!!";
