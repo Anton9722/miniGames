@@ -12,13 +12,10 @@ let sequenceBtn9 = document.getElementById("sequenceBtn9");
 
 let sequence = [];
 let userSequence = [];
-
+//glöm inte fixa så att usersequence inte multipleceras varje gång
 gameStartBtn.addEventListener("click", function () {
-  let run = true;
-  if (run) {
-    addSequence();
-    console.log(sequence);
-  }
+  addSequence();
+  sequenceBtnsAnimation();
 });
 
 sequenceBtn1.addEventListener("click", function () {
@@ -65,4 +62,21 @@ function addSequence() {
   return nextSequene;
 }
 
-function checkPlayerSequenceAgainstSequence() {}
+//checks if usersequence is same as sequence, returns true or false
+function checkUserSequenceAgainstSequence() {
+  return JSON.stringify(sequence) == JSON.stringify(userSequence);
+}
+
+//animation, loops through sequence list and changes colors of the elements for a second
+function sequenceBtnsAnimation() {
+  for (let i = 0; i < sequence.length; i++) {
+    setTimeout(() => {
+      document.getElementById(sequence[i]).style.backgroundColor = "black"; // sets background color to black
+      let sequenceSound = new Audio("sequencesound.mp3");
+      sequenceSound.play(); // plays sound
+    }, i * 1000);
+    setTimeout(() => {
+      document.getElementById(sequence[i]).style.backgroundColor = "#c2d9ff"; // reset the background color to its original color
+    }, (i + 1) * 1000);
+  }
+}
